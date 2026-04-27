@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recetas>
+<recetas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="recetas.xsd">
 
     <receta codigo="R1">
         <nombre>Paella</nombre>
