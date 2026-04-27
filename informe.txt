@@ -1,0 +1,53 @@
+EXAMEN LENGUAJE DE MARCAS RA4 y RA5:
+1)
+El XSD (XML Schema Definition, lenguaje que usamos para decribir cómo debe estar estructurado un XML) se encarga de comprobar que:
+- Aparecen todos los elementos obligatorios
+- Los elementos están en el orden correcto
+- Cada valor es del tipo correspondiente
+- Se cumplen las restricciones
+
+Concretamente en nuestro proyecto se comprueba que:
+- El atributo codigo sea obligatorio
+- El campo tiempo sea de tipo entero
+- El campo categoria tenga los valores: Entrante, Principal o Postre
+
+Para poder utilizar el XSD hemos utilizado distintas herramientas:
+- WebStrom: para desarrollar tanto el archivo xml como el archivo xsd
+- Referencia al esquema mediante xsi:noNamespaceSchemaLocation, en el xml, para asegurar que los archivos estén conectados
+- Validador de XML online: concretamente https://www.freeformatter.com/xml-validator-xsd.html
+
+2)
+Evidencia de validación:
+El archivo XML proporcionado ha sido validado correctamente contra el esquema XSD (recetas.xsd), sin errores de estructura ni de restricciones.
+
+Resultado de la validación:
+- El XML cumple con la estructura definida en el XSD.
+- Todos los elementos (nombre, categoria, tiempo, dificultad) aparecen en el orden correcto.
+- Los valores de categoria respetan las restricciones: Entrante, Principal y Postre
+- El atributo obligatorio codigo está presente en todas las recetas.
+
+Evidencia (captura):
+https://github.com/Sromerop0610/lmsgi-recetas-SaraRomero/blob/main/assets/images/validaciones_examen.png
+
+3) ¿Para qué sirve DOMParser y diferencia con JSON?
+DOMParser es una herramienta de JavaScript que permite leer un documento (XML o HTML en formato texto), convertirlo en un árbol de objetos (llamado DOM) y acceder y manipular sus elementos desde código JavaScript.
+
+Por ejemplo, en mi proyecto lo he usado de esta manera (adjunto permalinks que se refiere a dicha línea de código en el archivo app.js):
+https://github.com/Sromerop0610/lmsgi-recetas-SaraRomero/blob/de0ac42f0f29e441344d2745cf3c54cde11f32c1/app.js#L6
+
+Con esto se puede recorrer el XML como si fuera un árbol de nodos. Es decir, DOMParser es necesario para trabajar con XML en el navegador.
+
+La diferencia entre XML (DOMParser) Y JSON reside en que mientras que XML:
+- Tiene una estructura en forma de árbol con etiquetas
+- Es más verboso (ya que necesita etiquetas de abertura y cierre)
+- Necesita de DOMParser para el parseo
+- Se usa en sistemas más antiguos o documentos estructurados (es decir, está en desuso),
+
+JSON:
+- Tiene una estructura de objetos JavaScript
+- Es más ligero y compacto
+- Se usa directamente con JSON.parse() sin necesidad de usar la herramienta DOMParser
+- Está muy usado en APIs modernas y en aplicaciones web actuales
+
+
+En conclusión, aunque XML es más estructurado y rígido, JSON es más simple y fácil de usar en JavaScript.
