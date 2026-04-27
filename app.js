@@ -25,3 +25,25 @@ async function cargarRecetas() {
 
     mostrarTabla(listaRecetasJSON);
 }
+
+function mostrarTabla(recetas) {
+
+    const tbody = document.getElementById("tablaRecetas");
+
+    recetas.forEach(receta => {
+
+        const fila = document.createElement("tr");
+
+        fila.innerHTML = `
+            <td>${receta.codigo}</td>
+            <td>${receta.nombre}</td>
+            <td>${receta.categoria}</td>
+            <td>${receta.tiempo}</td>
+            <td>${receta.dificultad}</td>
+        `;
+
+        tbody.appendChild(fila);
+    });
+}
+
+cargarRecetas();
