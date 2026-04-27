@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recetas>
+
+    <receta codigo="R1">
+        <nombre>Paella</nombre>
+        <categoria>Recetas Españolas</categoria>
+        <tiempo>45</tiempo>
+        <dificultad>Difícil</dificultad>
+    </receta>
+
+    <receta codigo="R2">
+        <nombre>Tortilla de Patatas</nombre>
+        <categoria>Recetas Españolas</categoria>
+        <tiempo>30</tiempo>
+        <dificultad>Media</dificultad>
+    </receta>
+
+    <receta codigo="R3">
+        <nombre>Brownie de Chocolate</nombre>
+        <categoria>Postres</categoria>
+        <tiempo>45</tiempo>
+        <dificultad>Fácil</dificultad>
+    </receta>
+
+</recetas>
