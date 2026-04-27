@@ -1,6 +1,6 @@
 EXAMEN LENGUAJE DE MARCAS RA4 y RA5:
 1)
-El XSD (XML Schema Definition, lenguaje que usamos para decribir cómo debe estar estructurado un XML) se encarga de comprobar que:
+El XSD (XML Schema Definition, lenguaje que usamos para describir cómo debe estar estructurado un XML) se encarga de comprobar que:
 - Aparecen todos los elementos obligatorios
 - Los elementos están en el orden correcto
 - Cada valor es del tipo correspondiente
@@ -26,7 +26,7 @@ Resultado de la validación:
 - Los valores de categoria respetan las restricciones: Entrante, Principal y Postre
 - El atributo obligatorio codigo está presente en todas las recetas.
 
-Evidencia (captura):
+Evidencia (enlace a la captura):
 https://github.com/Sromerop0610/lmsgi-recetas-SaraRomero/blob/main/assets/images/validaciones_examen.png
 
 3) ¿Para qué sirve DOMParser y diferencia con JSON?
